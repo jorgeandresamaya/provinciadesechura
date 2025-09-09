@@ -8,7 +8,7 @@ jobs:
       - name: Enviar URLs
         uses: jakob-bagterp/index-now-submit-sitemap-action@v1
         with:
-          host: https://provinciadesechura.github.io
+          host: https://jorgeandresamaya.github.io/provinciadesechura/
           api_key: ${{ secrets.a3013a0b7778476d9060c431236543cc }}
-          api_key_location: https://provinciadesechura.github.io/a3013a0b7778476d9060c431236543cc.txt
+          api_key_location: https://jorgeandresamaya.github.io/provinciadesechura/a3013a0b7778476d9060c431236543cc.txt
           sitemap_locations: https://provinciadesechura.blogspot.com/sitemap.xml
