@@ -1,14 +1,15 @@
 name: Enviar URLs a IndexNow
+
 on:
   workflow_dispatch:
+
 jobs:
   indexnow:
     runs-on: ubuntu-latest
     steps:
-      - name: Enviar URLs
-        uses: jakob-bagterp/index-now-submit-sitemap-action@v1
+      - name: Enviar sitemap a IndexNow
+        uses: bojieyang/indexnow-action@v2
         with:
-          host: https://jorgeandresamaya.github.io/provinciadesechura/
-          api_key: ${{ secrets.INDEXNOW_API_KEY }}
-          api_key_location: https://jorgeandresamaya.github.io/provinciadesechura/a3013a0b7778476d9060c431236543cc.txt
-          sitemap_locations: https://provinciadesechura.blogspot.com/sitemap.xml
+          sitemap-location: https://provinciadesechura.blogspot.com/sitemap.xml
+          key: ${{ secrets.INDEXNOW_KEY }}
+          key-location: https://jorgeandresamaya.github.io/provinciadesechura/a3013a0b7778476d9060c431236543cc.txt
